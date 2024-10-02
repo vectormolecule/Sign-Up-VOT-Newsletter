@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Barlow;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5vw;
+    padding-block: 5vh;
+}
+nav>div>img{
+    height: 10vh;
+}
+.icons{
+    padding: 10px 12px;
+    background-color: #d9e7f7;
+    border-radius: 30px;
+}
+.icons>a>img{
+    height: 3vh;
+    margin-inline: 0.5vw;
+}
+.icons>a>img:hover{
+    height: 3vh;
+    margin-inline: 1vw
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 10, 10);
+    list-style-type: none;
+    gap: 3vw;
+}
+li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+li a:hover{
+    color: rgb(26, 129, 219);
+    font-size: 19px;
+}
+
+.grid-box1{
+    height: 75vh;
+    background-image: url(/Images/bg.png);
+    background-size: cover;
+    background-position-x: center;
+    /* border-radius: 100%; */
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 10vw;
+    padding-block: 2vh;
+    gap: 5vw;
+}
+.grid-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+.grid-box2>h1{
+    font-family: Fraunces;
+    color: #0b3663;
+}
+.name>input{
+    border: none;
+    background-color: #d9e7f7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20vw;
+}
+.name p{
+    color: #04203f;
+    font-family: Fraunces;
+}
+button{
+    border: none;
+    background-color: #0b3663;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 5vw;
+}
+@media(width <= 500px){
+    nav{
+        flex-direction: column;
+        gap: 5vh;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li a{
+        font-size: 22px;
+    }
+    li a:hover{
+        font-size: 30px;
+    }
+    .icons{
+        padding: 15px 18px;
+        background-color: #d9e7f7;
+        border-radius: 25px;
+    }
+    .icons>a>img{
+        height: 3vh;
+        margin-inline: 1vw;
+        transition: 0.5ms;
+    }
+    .icons>a>img:hover{
+        height: 4vh;
+        margin-inline: 3vw;
+    }
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .name>input{
+        width: 80vw;
+    }
+    button{
+        width: 40vw;
+    }
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: Barlow;
+    src: url(/font/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(/font/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
